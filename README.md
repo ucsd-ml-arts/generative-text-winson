@@ -38,6 +38,23 @@ The ideas generated have been fairly realistic (most are bad, some are good), so
 - The startup tagline model is finetuned to a loss of 0.05, while the larger TechCrunch model is finetuned to a loss of 1.8.
 - I sampled both models with temperature ranges from 0.2 to 2.0 and top-p from 0.1 to 1.0 (higher values translate to more "creativity" in the text) to find the optimal parameters for realistic text generation.
 
+## Bloopers
+
+### Lowering unemployment
+![Lowering unemployment](latinos.png)
+
+### Strategic arms sales
+![Strategic arms sales](nazis.png)
+
+### Internet of things
+![Internet of things](smart.png)
+
+### Workers of the world, unite!
+![Workers of the world, unite!](tinder.png)
+
+### 10,000 hours
+![10,000 hours](strip.png)
+
 ## Reference
 
 References to any papers, techniques, repositories you used:
