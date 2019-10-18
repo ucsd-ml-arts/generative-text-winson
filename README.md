@@ -29,6 +29,7 @@ The ideas generated have been fairly realistic (most are bad, some are good), so
 
 ## Results
 
+- http://recuria.com
 - https://github.com/winsonluk/gpt_descriptions/blob/master/io/descriptions.txt
 
 ## Technical Notes
@@ -37,6 +38,17 @@ The ideas generated have been fairly realistic (most are bad, some are good), so
 - I used 4 x Tesla V100 GPUs and 16 GB of RAM on [Vast.ai](https://vast.ai) to train the models. Training will fail with single GPUs or less than 16 GB of RAM. After training, generation can be performed with a single GPU, though 16 GB of RAM is still necessary.
 - The startup tagline model is finetuned to a loss of 0.05, while the larger TechCrunch model is finetuned to a loss of 1.8.
 - I sampled both models with temperature ranges from 0.2 to 2.0 and top-p from 0.1 to 1.0 (higher values translate to more "creativity" in the text) to find the optimal parameters for realistic text generation.
+
+## Examples
+- ![1](1.png)
+- ![2](2.png)
+- ![4](4.png)
+- ![5](5.png)
+- ![7](7.png)
+- ![8](8.png)
+- ![9](9.png)
+- ![10](10.png)
+- ![11](11.png)
 
 ## Bloopers
 
@@ -62,5 +74,7 @@ References to any papers, techniques, repositories you used:
   - [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 - Repositories
   - https://github.com/huntrontrakkr/gpt-2-simple
+  - https://github.com/tiffz/startup
 - Blog posts
   - https://minimaxir.com/2019/09/howto-gpt2/
+  - https://towardsdatascience.com/how-to-sample-from-language-models-682bceb97277
