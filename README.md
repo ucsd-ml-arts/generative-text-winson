@@ -29,8 +29,9 @@ The ideas generated have been fairly realistic (most are bad, some are good), so
 ## Results
 
 - http://recuria.com
-- https://github.com/winsonluk/gpt_descriptions/blob/master/io/descriptions.txt
+- https://github.com/winsonluk/gpt_pitches/blob/master/io/pitches.txt
 - https://github.com/winsonluk/gpt_summaries/blob/master/io/summaries.txt
+- https://github.com/winsonluk/gpt_descriptions/blob/master/io/descriptions.txt
 
 ## Technical Notes
 
