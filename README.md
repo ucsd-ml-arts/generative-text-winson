@@ -15,12 +15,10 @@ The ideas generated have been fairly realistic (most are bad, some are good), so
 ## Model/Data
 
 
-- I created two models, both finetuned with the gpt-2-simple library.
-- The first model is trained on startup taglines from [Startups List](https://www.startups-list.com/). I used Rick Hennessy's [scraped dataset](https://data.world/rickyhennessy/startup-names-and-descriptions).
-- The second model is trained on TechCrunch posts, which focus on the latest developments in technology. The scraped data is from [Kaggle](https://www.kaggle.com/thibalbo/techcrunch-posts-compilation).
-- https://winsonluk.com/assets/gpt.zip
-- https://winsonluk.com/assets/ideas.zip
-- https://winsonluk.com/assets/gpt_summaries.zip
+- I created three models finetuned with the gpt-2-simple library.
+- The first model is trained on startup taglines from [Startups List](https://www.startups-list.com/). I used Rick Hennessy's [scraped dataset](https://data.world/rickyhennessy/startup-names-and-descriptions). Download: https://winsonluk.com/assets/ideas.zip
+- The second model is from the previous dataset, but with startup descriptions rather than taglines. Download: https://winsonluk.com/assets/gpt_summaries.zip
+- The third model is trained on TechCrunch posts, which focus on the latest developments in technology. The scraped data is from [Kaggle](https://www.kaggle.com/thibalbo/techcrunch-posts-compilation). Download: https://winsonluk.com/assets/gpt.zip
 
 ## Code
 
@@ -32,13 +30,14 @@ The ideas generated have been fairly realistic (most are bad, some are good), so
 
 - http://recuria.com
 - https://github.com/winsonluk/gpt_descriptions/blob/master/io/descriptions.txt
+- https://github.com/winsonluk/gpt_summaries/blob/master/io/summaries.txt
 
 ## Technical Notes
 
 - The [multi-gpu fork of gpt-2-simple](https://github.com/huntrontrakkr/gpt-2-simple) needs to be installed to train with the 774M model.
 - I used 4 x Tesla V100 GPUs and 16 GB of RAM on [Vast.ai](https://vast.ai) to train the models. Training will fail with single GPUs or less than 16 GB of RAM. After training, generation can be performed with a single GPU, though 16 GB of RAM is still necessary.
-- The startup tagline model is finetuned to a loss of 0.05, while the larger TechCrunch model is finetuned to a loss of 1.8.
-- I sampled both models with temperature ranges from 0.2 to 2.0 and top-p from 0.1 to 1.0 (higher values translate to more "creativity" in the text) to find the optimal parameters for realistic text generation.
+- The startup tagline and description models are finetuned to a loss of around 0.1, while the larger TechCrunch model is finetuned to a loss of 1.8.
+- I sampled all models with temperature ranges from 0.2 to 2.0 and top-p from 0.1 to 1.0 (higher values translate to more "creativity" in the text) to find the optimal parameters for realistic text generation.
 
 ## Examples
 - ![1](1.png)
