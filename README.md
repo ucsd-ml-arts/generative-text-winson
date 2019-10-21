@@ -28,10 +28,11 @@ The ideas generated have been fairly realistic (most are bad, some are good), so
 
 ## Results
 
-- http://recuria.com
-- https://github.com/winsonluk/gpt_pitches/blob/master/io/pitches.txt
-- https://github.com/winsonluk/gpt_summaries/blob/master/io/summaries.txt
-- https://github.com/winsonluk/gpt_descriptions/blob/master/io/descriptions.txt
+- Website: http://recuria.com
+- Taglines only: https://github.com/winsonluk/gpt_pitches/blob/master/io/pitches.txt
+- Taglines with descriptions: https://github.com/winsonluk/gpt_summaries/blob/master/io/summaries.txt
+- Taglines with TechCrunch commentary: https://github.com/winsonluk/gpt_descriptions/blob/master/io/descriptions.txt
+- Taglines with descriptions *and* TechCrunch commentary: https://github.com/winsonluk/gpt_descriptions/blob/master/io/descriptions_with_summaries.txt
 
 ## Technical Notes
 
